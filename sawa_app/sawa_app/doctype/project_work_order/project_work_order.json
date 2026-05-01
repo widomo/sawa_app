@@ -1,0 +1,211 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-02-09 11:22:24.425059",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_xbfj",
+  "naming_series",
+  "quotation",
+  "sales_order",
+  "delivery_date",
+  "column_break_rreq",
+  "project_name",
+  "customer",
+  "project",
+  "amended_from",
+  "technical_info_section",
+  "item",
+  "model",
+  "voltage",
+  "external_dimensions",
+  "column_break_wpze",
+  "bom",
+  "manufacturing_work_order",
+  "target_warehouse",
+  "qty",
+  "color",
+  "lifting_capacity",
+  "drawing",
+  "section_break_pndo",
+  "departments"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_xbfj",
+   "fieldtype": "Section Break",
+   "label": "Basic Info"
+  },
+  {
+   "fieldname": "quotation",
+   "fieldtype": "Link",
+   "label": "Quotation",
+   "no_copy": 1,
+   "options": "Quotation",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_rreq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Series",
+   "no_copy": 1,
+   "options": "P-WO-.YYYY.-",
+   "print_hide": 1,
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "sales_order",
+   "fieldtype": "Link",
+   "label": "Sales Order",
+   "options": "Sales Order"
+  },
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "delivery_date",
+   "fieldtype": "Date",
+   "label": "Delivery Date"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Project Work Order",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "technical_info_section",
+   "fieldtype": "Section Break",
+   "label": "Technical Info"
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "label": "Model"
+  },
+  {
+   "fieldname": "column_break_wpze",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Int",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "voltage",
+   "fieldtype": "Data",
+   "label": "Voltage"
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Data",
+   "label": "Color"
+  },
+  {
+   "fieldname": "external_dimensions",
+   "fieldtype": "Small Text",
+   "label": "External Dimensions"
+  },
+  {
+   "fieldname": "lifting_capacity",
+   "fieldtype": "Data",
+   "label": "Lifting Capacity"
+  },
+  {
+   "fieldname": "drawing",
+   "fieldtype": "Attach",
+   "label": "Attach Drawing"
+  },
+  {
+   "fieldname": "section_break_pndo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "departments",
+   "fieldtype": "Table",
+   "label": "Departments",
+   "options": "Project Work Order Department",
+   "search_index": 1
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "label": "Item",
+   "options": "Item"
+  },
+  {
+   "fieldname": "bom",
+   "fieldtype": "Link",
+   "label": "BOM",
+   "options": "BOM"
+  },
+  {
+   "fieldname": "manufacturing_work_order",
+   "fieldtype": "Link",
+   "label": "Manufacturing Work Order",
+   "options": "Work Order"
+  },
+  {
+   "fieldname": "target_warehouse",
+   "fieldtype": "Link",
+   "label": "Target Warehouse",
+   "options": "Warehouse"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-02-10 09:28:59.252937",
+ "modified_by": "Administrator",
+ "module": "Sawa App",
+ "name": "Project Work Order",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

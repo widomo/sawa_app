@@ -1,0 +1,80 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:leave_type_name",
+ "creation": "2024-09-16 14:57:11.209247",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "engine": "InnoDB",
+ "field_order": [
+  "leave_type_name",
+  "max_leaves_allowed",
+  "max_continuous_days_allowed"
+ ],
+ "fields": [
+  {
+   "fieldname": "leave_type_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Permission Type Name",
+   "oldfieldname": "leave_type_name",
+   "oldfieldtype": "Data",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "max_leaves_allowed",
+   "fieldtype": "Int",
+   "label": "Maximum Permission Allowed "
+  },
+  {
+   "fieldname": "max_continuous_days_allowed",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "MaxPermission Allowed / Month (Min)",
+   "oldfieldname": "max_days_allowed",
+   "oldfieldtype": "Data"
+  }
+ ],
+ "icon": "fa fa-flag",
+ "links": [],
+ "modified": "2024-09-17 08:56:28.059817",
+ "modified_by": "Administrator",
+ "module": "Sawa App",
+ "name": "Permission Type",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "Employee"
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

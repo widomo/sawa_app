@@ -1,0 +1,26 @@
+{
+ "allow_roles": [
+  {
+   "role": "Administrator"
+  }
+ ],
+ "creation": "2024-10-27 15:49:37.040704",
+ "docstatus": 0,
+ "doctype": "Module Onboarding",
+ "documentation_url": "http://192.168.2.49:8000/app/hr",
+ "idx": 0,
+ "is_complete": 0,
+ "modified": "2024-10-27 15:49:37.040704",
+ "modified_by": "Administrator",
+ "module": "Sawa App",
+ "name": "SAWA",
+ "owner": "Administrator",
+ "steps": [
+  {
+   "step": "Company Set Up"
+  }
+ ],
+ "subtitle": "\u0633\u0648\u0627",
+ "success_message": "ys",
+ "title": "Sawa"
+}
